@@ -7,6 +7,6 @@ export const githubWebhookRouteRegister = () => {
 };
 
 export const triggerHandler = (req: Request, res: Response) => {
-  console.log(req.body);
+  console.log(JSON.parse(req.body.payload));
   res.sendStatus(200);
 };
