@@ -1,0 +1,31 @@
+{
+  "name": "aniruddha-web-app",
+  "version": "1.0.0",
+  "description": "Web Application for Aniruddha Chatterjee",
+  "author": {
+    "name": "Aniruddha Chatterjee",
+    "url": "https://www.aniruddha.net",
+    "email": "me@aniruddha.net"
+  },
+  "main": "build/server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/server.js",
+    "postinstall": "tsc && cp -r ./static/client ./build/client && cd ./static/papyrus-client && yarn install",
+    "dev": "tsc && yarn start"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.14",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "typescript": "^3.9.6"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.6",
+    "@types/express": "^4.17.6",
+    "@types/morgan": "^1.9.1",
+    "@types/multer": "^1.4.3"
+  }
+}
