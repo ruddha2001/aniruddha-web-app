@@ -2,7 +2,7 @@ import { Request, Response, Router } from "express";
 const router = Router();
 
 export const githubWebhookRouteRegister = () => {
-  router.get("/", triggerHandler);
+  router.post("/", triggerHandler);
   return router;
 };
 
