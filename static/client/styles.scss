@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+
+  body {
+    .row {
+      margin: 0 !important;
+      width: 100% !important;
+    }
+    .fs-container {
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    .landing-container {
+      background-image: linear-gradient(#0f0f0f, #000000);
+      padding: 0;
+      color: white;
+      position: relative;
+
+      #overlay-container {
+        background-image: linear-gradient(#ca2469, #f80029);
+      }
+
+      #overlay-text {
+        margin-top: 33vh;
+
+        #line-name {
+          font-size: 5rem;
+        }
+
+        #line-description {
+          font-size: 3rem;
+        }
+      }
+
+      #overlay-side-text {
+        color: white;
+        text-align: center;
+        font-size: 10rem;
+        margin-top: 32vh;
+      }
+    }
+  }
+}

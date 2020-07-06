@@ -1,3 +1,37 @@
-
+html {
+  scroll-behavior: smooth;
+}
+html body .row {
+  margin: 0 !important;
+  width: 100% !important;
+}
+html body .fs-container {
+  min-height: 100vh;
+  width: 100%;
+}
+html body .landing-container {
+  background-image: linear-gradient(#0f0f0f, #000000);
+  padding: 0;
+  color: white;
+  position: relative;
+}
+html body .landing-container #overlay-container {
+  background-image: linear-gradient(#ca2469, #f80029);
+}
+html body .landing-container #overlay-text {
+  margin-top: 33vh;
+}
+html body .landing-container #overlay-text #line-name {
+  font-size: 5rem;
+}
+html body .landing-container #overlay-text #line-description {
+  font-size: 3rem;
+}
+html body .landing-container #overlay-side-text {
+  color: white;
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 32vh;
+}
 
 /*# sourceMappingURL=styles.css.map */
