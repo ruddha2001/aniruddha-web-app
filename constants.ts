@@ -1,3 +1,5 @@
+import bunyan from "bunyan";
+
 export const routeVariables = {
   apiURL: "/api/v1",
   papyrusURL: "/papyrus",
@@ -7,3 +9,7 @@ export const routeVariables = {
     PAPYRUS: "/papyrus",
   },
 };
+
+export const logger = bunyan.createLogger({
+  name: "aniruddha",
+});

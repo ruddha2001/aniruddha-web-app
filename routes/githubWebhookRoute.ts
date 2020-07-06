@@ -1,8 +1,9 @@
 import { Request, Response, Router } from "express";
+import { eventValidation } from "../middlewares";
 const router = Router();
 
 export const githubWebhookRouteRegister = () => {
-  router.post("/", triggerHandler);
+  router.post("/", eventValidation, triggerHandler);
   return router;
 };
 
