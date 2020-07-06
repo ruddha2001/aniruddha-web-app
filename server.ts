@@ -1,11 +1,15 @@
+require("dotenv").config();
 import express from "express";
 import { routeVariables } from "./constants";
-require("dotenv").config();
 
 import { clientRouteRegister } from "./routes";
 import http from "http";
+import * as path from "path";
 
 const app = express();
+
+app.use(express.static(path.join(__dirname, "client")));
+app.use(express.static(path.join(__dirname, "papyrus-client")));
 
 app.use(`${routeVariables.clientURL}`, clientRouteRegister());
 
