@@ -6,7 +6,7 @@ html body .row {
   width: 100% !important;
 }
 html body .fs-container {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 }
 html body .landing-container {
