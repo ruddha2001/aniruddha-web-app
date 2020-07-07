@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node build/server.js",
-    "postinstall": "tsc && cp -r ./static/client ./build/client && cd ./static/papyrus-client && yarn install",
+    "postinstall": "tsc && cp -r ./client ./build/client",
     "dev": "tsc && yarn start"
   },
   "dependencies": {
