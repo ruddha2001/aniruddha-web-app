@@ -1,4 +1,5 @@
 import { Request, Response, Router } from "express";
+import * as path from "path";
 const router = Router();
 
 export const clientRouteRegister = () => {
@@ -7,5 +8,5 @@ export const clientRouteRegister = () => {
 };
 
 export const homepageHandler = (req: Request, res: Response) => {
-  res.send("Migration to cloud in progress");
+  res.sendFile(path.join(__dirname, "client", "index.html"));
 };

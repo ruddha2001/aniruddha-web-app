@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node build/server.js",
-    "postinstall": "tsc && cp -r ./static/client ./build/client && cd ./static/papyrus-client && yarn install",
+    "postinstall": "tsc && cp -r ./client ./build/client",
     "dev": "tsc && yarn start"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "express": "^4.17.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "path": "^0.12.7",
     "sass": "^1.26.9",
     "typescript": "^3.9.6"
   },
